@@ -9,7 +9,7 @@ CREATE DATABASE gutendex;
 
 Get Project from Git
 ```sh
-git clone ...this..repo..
+git clone https://github.com/akashdobariya2702/bookstore.git
 ```
 
 Change DATABASES configuration of `bookstore/settings.py` file.

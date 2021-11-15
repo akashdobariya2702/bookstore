@@ -10,7 +10,7 @@ class BooksAuthor(models.Model):
     name = models.CharField(max_length=128)
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_author'
 
 
@@ -22,7 +22,7 @@ class BooksBook(models.Model):
     title = models.TextField(blank=True, null=True)
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_book'
 
 
@@ -33,7 +33,7 @@ class BooksBookAuthors(models.Model):
     author_id = models.ForeignKey('BooksAuthor', on_delete=models.CASCADE, db_column='author_id')
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_book_authors'
 
 
@@ -45,7 +45,7 @@ class BooksBookBookshelves(models.Model):
         'BooksBookshelf', on_delete=models.CASCADE, db_column='bookshelf_id')
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_book_bookshelves'
 
 
@@ -57,7 +57,7 @@ class BooksBookLanguages(models.Model):
         'BooksLanguage', on_delete=models.CASCADE, db_column='language_id')
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_book_languages'
 
 
@@ -68,7 +68,7 @@ class BooksBookSubjects(models.Model):
     subject_id = models.ForeignKey('BooksSubject', on_delete=models.CASCADE, db_column='subject_id')
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_book_subjects'
 
 
@@ -77,7 +77,7 @@ class BooksBookshelf(models.Model):
     name = models.CharField(max_length=64)
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_bookshelf'
 
 
@@ -89,7 +89,7 @@ class BooksFormat(models.Model):
                                 related_name='formats', db_column='book_id')
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_format'
 
 
@@ -98,7 +98,7 @@ class BooksLanguage(models.Model):
     code = models.CharField(max_length=4)
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_language'
 
 
@@ -107,5 +107,5 @@ class BooksSubject(models.Model):
     name = models.TextField()
 
     class Meta:
-        managed = False
+        # managed = False
         db_table = 'books_subject'

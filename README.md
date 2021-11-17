@@ -1,3 +1,6 @@
+# Online Demo
+Visit [The Website](http://akashdobariya.pythonanywhere.com/api/book/) to check the API data online
+
 # Setup
 Get Project from Git
 ```sh
@@ -11,7 +14,7 @@ source dj_run.sh
 ```
 
 # Now you can test website
-Open `http://127.0.0.1:8000/api/book/` URL in the brower (ex. Chrome)
+Open http://127.0.0.1:8000/api/book/ URL in the brower (ex. Chrome)
 
 You can filter data by
 ```sh
